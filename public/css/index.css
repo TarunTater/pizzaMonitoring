@@ -1,0 +1,157 @@
+@CHARSET "ISO-8859-1";
+@import url(http://fonts.googleapis.com/css?family=Lato:100);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+
+.well {
+	background-color: #152935;
+
+}
+
+.card{
+  background-color: #eee;
+	height: 175px;
+	float: centre;
+	padding-left: 10px;
+	align-items: center;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.small-card{
+	float:left;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.outerHeading {
+	position: relative;
+
+	height: 180px;
+}
+
+.active {
+  display: inline-block;
+  height: 69px;
+
+
+  font-size: 10px;
+  background-color: white;
+  border: 6px solid #2ecc71;
+
+  padding: 0px 10px 0px 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+	border-radius: 1px;
+
+	color: black;
+	font-weight: bold;
+
+	text-align: center;
+  box-shadow: 0 15px 29px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+}
+
+
+.progress{
+	display: inline-block;
+    height: 69px;
+
+
+    font-size: 10px;
+    background-color: white;
+    border: 6px solid #ffff33;
+
+    padding: 0px 10px 0px 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+  	border-radius: 1px;
+
+  	color: black;
+  	font-weight: bold;
+
+  	text-align: center;
+    box-shadow: 0 15px 29px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+
+}
+.not-started{
+	display: inline-block;
+    height: 69px;
+
+
+    font-size: 10px;
+    background-color: white;
+    border: 6px solid #456f74;
+
+    padding: 0px 10px 0px 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+  	border-radius: 1px;
+
+  	color: black;
+  	font-weight: bold;
+
+  	text-align: center;
+    box-shadow: 0 15px 29px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+
+}
+.arrow {
+  height: 20px;
+	text-align: center;
+	color: black;
+	padding: 10px 0px 15px 0px;
+  font-size: 40px;
+	text-decoration-color: blank;
+
+}
+
+.pizzaName{
+	  background-color: #152935; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+		font-family: 'Raleway';
+		font-weight: bolder;
+		color: white;
+    font-size: 16px;
+}
+
+.refreshbutton{
+		background-color: #5bc0de;
+    border: none;
+    color: white;
+    text-align: center;
+		float: right;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.changeColor{
+	color: #5bc0de;
+}
+
+.innerHeading {
+	position: relative;
+	top: 50%;
+	font-weight: bolder;
+	background-color: #152935;
+	transform: translateY(-50%);
+}
+
+.myTitle {
+	font-size: 40px;
+	font-stretch: wider;
+	font-style: normal;
+	font-family: 'Raleway';
+	letter-spacing: 2px;
+	font-weight: bolder;
+	color: white;
+	vertical-align: middle;
+}
+
+body, html {
+	height: 100%;
+	background-color: #eee;
+  font-family: 'Lato';
+}

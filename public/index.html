@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+
+
+    <!-- Latest compiled and minified CSS - loading at the top, since we want stylesheets to load up as soon as the page comes up -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+    <link rel="stylesheet"
+    	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- My CSS Styles -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="controllers/ctrl1.js"></script>
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+    <title> Pizza Order</title>
+</head>
+<body ng-controller="myCtrl">
+
+
+	<!-- Heading Full Width -->
+	<div class="container-fluid well outerHeading">
+
+		<div class="col-lg-12 myTitle innerHeading" align="center">
+			Pizza Order Status Monitoring<br>
+		</div>
+
+	</div>
+	<!-- End of Heading -->
+
+	<!-- Main Container -->
+	<div class="container-fluid" >
+        <div ng-repeat="pizza in pizzas">
+			<div class="card">
+
+      		<div>
+				<div class= pizzaName >
+				 <p>{{ pizza.name }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Order number : {{pizza.orderNo}}</p>
+				</div><br/>
+
+        		<div class="row">
+                    <button ng-class= "{'active col-sm-1':pizza['orderStatus']['orderPlaced']==='Done','progress col-sm-1':pizza['orderStatus']['orderPlaced']==='in-progress', 'not-started col-sm-1':pizza['orderStatus']['orderPlaced']==='not-started'}" id="orderPlaced">Order Placed</button>
+					<div class="fa fa-long-arrow-right col-sm-1 arrow"></div>
+					<button ng-class= "{'active col-sm-1':pizza['orderStatus']['baseCreated']==='Done','progress col-sm-1':pizza['orderStatus']['baseCreated']==='in-progress', 'not-started col-sm-1':pizza['orderStatus']['baseCreated']==='not-started'}" id="baseCreated">Base Created</button>
+					<div class="fa fa-long-arrow-right col-sm-1 arrow"></div>
+                    <button ng-class= "{'active col-sm-1':pizza['orderStatus']['Baking']==='Done','progress col-sm-1':pizza['orderStatus']['Baking']==='in-progress', 'not-started col-sm-1':pizza['orderStatus']['Baking']==='not-started'}" id="Baking">Baking</button>
+					<div class="fa fa-long-arrow-right col-sm-1 arrow"></div>
+					<button ng-class= "{'active col-sm-1':pizza['orderStatus']['addingToppings']==='Done','progress col-sm-1':pizza['orderStatus']['addingToppings']==='in-progress', 'not-started col-sm-1':pizza['orderStatus']['addingToppings']==='not-started'}" id="addingToppings">Adding Toppings</button>
+					<div class="fa fa-long-arrow-right col-sm-1 arrow"></div>
+                    <button ng-class= "{'active col-sm-1':pizza['orderStatus']['packing']==='Done','progress col-sm-1':pizza['orderStatus']['packing']==='in-progress', 'not-started col-sm-1':pizza['orderStatus']['packing']==='not-started'}" id="packing">Packing</button>
+                    <div class="fa fa-long-arrow-right col-sm-1 arrow"></div>
+                    <button ng-class= "{'active col-sm-1':pizza['orderStatus']['OrderDelivered']==='Done','progress col-sm-1':pizza['orderStatus']['OrderDelivered']==='in-progress', 'not-started col-sm-1':pizza['orderStatus']['OrderDelivered']==='not-started'}" id="OrderDelivered">Order Delivered</button>
+
+				</div>
+			</div>
+		</div><br/>
+    </div>
+</body>
+</html>

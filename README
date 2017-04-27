@@ -1,0 +1,13 @@
+This is a basic application for a monitoring a service.
+For my example, I have used a Pizza Monitoring service.
+
+The following technologies were used -
+MEAN STACK - MongoDB, Express, AngularJS, NodeJS
+The following dependencies need to be installed using npm install
+      - express
+      - mongojs
+      - bodyParser
+
+In this, as and when the database is updated with more Pizza orders, the display shows the orders with the progress in making of each pizza.
+
+The status gets refreshed automatically every 5 seconds.
