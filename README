@@ -9,5 +9,12 @@ The following dependencies need to be installed using npm install
       - bodyParser
 
 In this, as and when the database is updated with more Pizza orders, the display shows the orders with the progress in making of each pizza.
+There are 6 stages in the process of a pizza order : 
+      "orderPlaced", "baseCreated",  "Baking", "addingToppings", "packing", "OrderDelivered".
+      Each of these stages can have 3 different status values : "not-started", "in-progress" and "Done".
+      These 3 status are indicated by colours : 
+            "not-started" : "grey", 
+            "in-progress" : "yellow",
+            "Done" : "green"
 
 The status gets refreshed automatically every 5 seconds.
